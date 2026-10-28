@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "mainmenu-repair",
+	"version": "${version}",
+	"name": "MainMenuRepair",
+	"description": "清理 ESC 暂停菜单：移除右下角 4 个原版图标按钮（报告 Bug / 给予反馈 / 好友 / 举报玩家），并去掉服务器自定义选项按钮上的“第三方内容”警告提示。",
+	"authors": [
+		"SWUSTMC Club"
+	],
+	"contact": {
+		"homepage": "https://github.com/SWUST-Minecraft-Club/MainMenuRepair",
+		"sources": "https://github.com/SWUST-Minecraft-Club/MainMenuRepair"
+	},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.mainmenurepair.MainMenuRepairClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "mainmenu-repair.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.0",
+		"minecraft": "~26.3",
+		"java": ">=25"
+	}
+}

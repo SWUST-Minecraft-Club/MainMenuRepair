@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.example.mainmenurepair.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"ScreenInitMixin",
+		"GuiSetScreenMixin",
+		"PauseScreenMixin",
+		"ScreenInvokerMixin",
+		"HandbookFocusMixin"
+	]
+}
